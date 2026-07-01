@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../TP Booki/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo/Booki.png" alt="logo de booki">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#hebergement">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#activite">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p>
+                En plein centre ville ou en pleine nature
+            </p>
+
+            <div class="barre-de-recherche">
+                <div class="icon-de-recherche">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </div>
+                <input type="search" name="Marseille, France" placeholder="Marseille, France">
+                <button class="bouton-de-recherche">Rechercher</button>
+            </div>
+        </section>
+
+        <!-- section filtre -->
+        <div class="filtres">
+            <h2>
+                Filtres
+            </h2>
+            <div class="boutonsfiltres">
+                <button class="bouton" type="button">
+                    <i class="fa-solid fa-money-bill-wave filtreIcone" aria-hidden="true"></i>
+                    Économique
+                </button>
+
+                <button class="bouton" type="button">
+                    <i class="fa-solid fa-child filtreIcone" aria-hidden="true"></i>
+                    Familial
+                </button>
+
+                <button class="bouton" type="button">
+                    <i class="fa-solid fa-heart filtreIcone" aria-hidden="true"></i>
+                    Romantique
+                </button>
+
+                <button class="bouton" type="button">
+                    <i class="fa-solid fa-dog filtreIcone" aria-hidden="true"></i>
+                    Animaux autorisés
+                </button>
+
+            </div>
+        </div>
+        <div class="info">
+            <div class="infoicone">
+                <i class="bi bi-info"></i>
+            </div>
+            <p>
+                Plus de 500 logements sont disponibles dans cette ville
+            </p>
+        </div>
+
+        <section id="hebergements">
+            <div class="conteneur-hebergements">
+                <h2>
+                    Hébergements à Marseille
+                </h2>
+                <div class="conteneur-card">
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/auberge-la-cannebiere.jpg" alt="chambre avec lit superposés avec vue sur la rue">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Auberge La Cannebiere
+                            </h3>
+                            <p>
+                                Nuit a partir de 25€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/hotel-du-port.jpg" alt="chambre avec deux lit simple,mur gris à l'hotel du port">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Hôtel du port
+                            </h3>
+                            <p>
+                                Nuit a partir de 52€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/hotel-les-mouettes.jpg" alt="chambre avec lit double, dressing et miroir à l'hotel les mouettes">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Hôtel Les mouettes
+                            </h3>
+                            <p>
+                                Nuit a partir de 76€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/hotel-de-la-mer.jpg" alt="chambre avec lit double avec vue sur la mer à l'hotel de la mer">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Hôtel de la mer
+                            </h3>
+                            <p>
+                                Nuit a partir de 46€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/auberge-le-panier.jpg" alt="chambre avec plusieurs lit superposés en bois à l'auberge du panier">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Auberge Le Panier
+                            </h3>
+                            <p>
+                                Nuit a partir de 23€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="carte-hebergement">
+                        <div class="image-hergement">
+                            <img src="images/hebergements/3_medium/hotel-chez-amina.jpg.jpg" alt="chambre avec lit double face à un bureau et une télévision à l'hotel amina">
+                        </div>
+                        <div class="description">
+                            <h3>
+                                Hôtel chez Amina
+                            </h3>
+                            <p>
+                                Nuit a partir de 96€
+                            </p>
+                        </div>
+                        <div class="notation">
+                            <div class="etoilebleu">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
