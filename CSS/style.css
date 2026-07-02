@@ -371,3 +371,102 @@ nav ul li a:hover{
 }
 
 /* section activités */
+.activités{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 50px;
+}
+
+.activités h2{ 
+  font-family: "Raleway","sans-serif";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+
+.conteneuractivités{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cartesactivités{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.cartesactivités .imagesactivités img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.cartesactivités h3{
+  font-family: "Raleway","sans-serif";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+
+.cartescolonne1 .fortpomegues{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.fortpomegues img{
+  width: 290px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.fortpomegues h3{
+  font-family: "Raleway","sans-serif";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+
+.cartescolonne1 .ilesfrioul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.ilesfrioul img{
+  width: 290px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.ilesfrioul h3{
+  font-family: "Raleway","sans-serif";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
