@@ -1,27 +1,27 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* header */
 header{
-    padding: 10px 50px;
+  padding: 10px 50px;
 }
 header,nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 nav ul,a{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style-type: none;
-    gap: 80px;
-    color: black;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 80px;
+  color: black;
 }
 nav ul li a:hover{
   color: #0065FC;
@@ -29,83 +29,84 @@ nav ul li a:hover{
 
 
 /* main */
+
+/* section hero */
 .hero h1{
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    padding: 5px 0px 0px 45px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 5px 0px 0px 45px;
 }
 .hero p{
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    padding: 8px 0px 0px 45px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 8px 0px 0px 45px;
 }
 .barre-de-recherche {
-    display: flex;
-    align-items: stretch;
-    max-width: 540px;
-    width: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-    margin: 25px 0px 0px 45px;
-  }
+  display: flex;
+  align-items: stretch;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin: 25px 0px 0px 45px;
+}
 
-  .icon-de-recherche {
-    background: #F2F2F2;
-    display: flex;
-    align-items: center;
-    padding: 0 18px;
-  }
+.icon-de-recherche {
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+}
 
- .icon-de-recherche svg {
-    width: 20px;
-    height: 20px;
-    fill: #1B1B1B;
-  }
+.icon-de-recherche svg {
+  width: 20px;
+  height: 20px;
+  fill: #1B1B1B;
+}
 
- .barre-de-recherche input {
-    border: none;
-    outline: none;
-    padding: 16px 18px;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: "Raleway", sans-serif;
-    color: #1B1B1B;
-    flex: 1;
-    background: #ffffff;
-  }
+.barre-de-recherche input {
+  border: none;
+  outline: none;
+  padding: 16px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #1B1B1B;
+  flex: 1;
+  background: #ffffff;
+}
 
-  .barre-de-recherche input::placeholder {
-    color: #1B1B1B;
-    font-weight: 700;
-    opacity: 1;
-  }
+.barre-de-recherche input::placeholder {
+  color: #1B1B1B;
+  font-weight: 700;
+  opacity: 1;
+}
 
-  .bouton-de-recherche {
-    background: #0065FC;
-    color: #ffffff;
-    border: none;
-    padding: 16px 32px;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
-    border-radius: 0 40px 40px 0;
-    transition: background 0.2s;
-  }
+.bouton-de-recherche {
+  background: #0065FC;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border-radius: 0 40px 40px 0;
+  transition: background 0.2s;
+}
 
-  .bouton-de-recherche:hover {
-    background: #0054d6;
-  }
+.bouton-de-recherche:hover {
+  background: #0054d6;
+}
   
 
   
 /* filtre */
-
 .filtres{
   display: flex;
   align-items: center;
@@ -180,13 +181,14 @@ nav ul li a:hover{
   font-weight: 400;
 }
 
+/* section hebergement */
 .hebergements{
   display: flex;
   flex-direction: row;
 }
 
 .conteneur-hebergements{
-  width: 950px;
+  width: 1000px;
   height: 650px;
   justify-content: space-between;
   background-color: #f2f2f2;
@@ -209,7 +211,7 @@ nav ul li a:hover{
   flex-direction: column;
   gap: 10px;
   background-color: white;
-  padding: 5px;
+  padding: 4px;
   border-radius: 30px;
   box-shadow: 1px 1px 5px #888888;
 }
@@ -222,8 +224,8 @@ nav ul li a:hover{
 }
 
 .image-hergement img{
-  width: 270px;
-  height: 130px;
+  width: 290px;
+  height: 140px;
   object-fit: cover;
   border-radius: 30px 30px 0px 0px;
 }
@@ -272,17 +274,16 @@ nav ul li a:hover{
 }
 
 
-
-
+/* section populaire */
 .conteneur-populaire{
-  width: 450px;
+  width: 420px;
   height: 650px;
   background-color: #f2f2f2;
   border-radius: 30px;
   padding-left: 30px;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-right: 30px;
 }
 
@@ -291,20 +292,21 @@ nav ul li a:hover{
   flex-direction: column;
   gap: 30px;
 }
+
 .titrepopulaire{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0px;
   margin: auto;
-
 }
+
 .carte-populaire{
   display: flex;
   flex-direction: row;
   gap: 10px;
   background-color: white;
-  padding: 2px;
+  padding: 4px 0px 0px 4px;
   border-radius: 30px;
   box-shadow: 1px 1px 5px #888888;
 }
@@ -338,13 +340,34 @@ nav ul li a:hover{
   font-style: normal;
   padding-bottom: 10px;
 }
-
+.notationpopulaire{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 .notationpopulaire .etoilebleu{
   color: #0065FC;
-  padding-top: 70px;
+  padding-top: px;
 }
 
 .notationpopulaire .etoilegris{
   color: #CFCFCF;
-  padding-top: 70px;
+  padding-top: 73px;
 }
+
+.notationpopulaire2{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.notationpopulaire2 .etoilebleu{
+  color: #0065FC;
+  padding-top: 53px;
+}
+
+.notationpopulaire2 .etoilegris{
+  color: #CFCFCF;
+  padding-top: 53px;
+}
+
+/* section activités */
