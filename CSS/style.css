@@ -17,6 +17,10 @@ header,nav{
   justify-content: space-between;
   align-items: center;
 }
+.logo img{
+  width: 60px;
+  height: 40px;
+}
 nav ul,a{
   display: flex;
   flex-direction: row;
@@ -25,7 +29,7 @@ nav ul,a{
   gap: 80px;
   color: black;
   border-top: 3px solid transparent;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 nav ul li a:hover{
   color: #0065FC;
@@ -36,6 +40,58 @@ nav ul li a:hover{
   border-top-color: #0065FC;
 }
 
+@media screen and (max-width: 768px){ 
+  body{
+    width: auto;
+  }
+  main{
+    margin: 0;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .logo{
+    margin: auto;
+  }
+
+  nav{
+    width: 100%;
+    margin: 20px 0;       
+  }
+
+  nav ul{
+    width: 100%;
+  }
+
+  nav ul li{
+    width: 100%;
+    border-bottom: 2px solid #F2F2F2;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .nav-links{ 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-links:hover{
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .nav-links:active{
+    color: #0065FC;
+  }
+
+  nav ul li:hover, nav ul li:active{
+    color: #0065FC;    
+    border-bottom: 3px solid;    
+  }
+}
 
 /* main */
 
@@ -47,30 +103,66 @@ nav ul li a:hover{
   font-size: 22px;
   padding: 5px 0px 0px 45px;
 }
+
+@media screen and (max-width: 768px){
+ .hero h1{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 5px 25px 0px 25px;
+  }
+}
+
 .hero p{
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   padding: 8px 0px 0px 45px;
 }
+
+@media screen and (max-width: 768px){
+  .hero p{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 25px 0px 25px;
+  }
+}
+
+/* barre de recherche */
 .barre-de-recherche {
   display: flex;
   align-items: stretch;
   max-width: 540px;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   margin: 25px 0px 0px 45px;
 }
+@media screen and (max-width: 768px) {
+  .barre-de-recherche {
+  display: flex;
+  align-items: stretch;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin: 25px 25px 0px 25px;
+  }
+}
 
 .icon-de-recherche {
-  background: #F2F2F2;
+  background: #dadada;
   display: flex;
   align-items: center;
-  padding: 0 18px;
+  padding: 0 15px;
 }
+
 
 .icon-de-recherche svg {
   width: 20px;
@@ -81,8 +173,9 @@ nav ul li a:hover{
 .barre-de-recherche input {
   border: none;
   outline: none;
-  padding: 16px 18px;
-  font-size: 1rem;
+  max-width: 250px;
+  padding: 16px 10px;
+  font-size: 16px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: #1B1B1B;
@@ -90,29 +183,76 @@ nav ul li a:hover{
   background: #ffffff;
 }
 
+
+@media screen and (max-width: 768px){
+  .barre-de-recherche input{
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 16px 10px;
+    max-width: 200px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #1B1B1B;
+    flex: 1;
+    background: #ffffff;
+  }
+  .icon-de-recherche {
+  background: #dadada;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  }
+}
+
 .barre-de-recherche input::placeholder {
   color: #1B1B1B;
   font-weight: 700;
   opacity: 1;
+}
+.icone-recherche{
+  display: none;
 }
 
 .bouton-de-recherche {
   background: #0065FC;
   color: #ffffff;
   border: none;
-  padding: 16px 32px;
+  padding: 16px 20px;
   font-size: 1rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   cursor: pointer;
-  border-radius: 0 40px 40px 0;
+  border-radius: 0 15px 15px 0;
   transition: background 0.2s;
 }
-
+.icone-envoie{
+  display: non;
+}
 .bouton-de-recherche:hover {
   background: #0054d6;
 }
-  
+
+@media screen and (max-width: 768px){
+  .bouton-de-recherche{
+    display: none;
+  }
+  .icone-envoie{
+    background: #0065FC;
+    color: #ffffff;
+    border: none;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    transition: background 0.2s;
+  }
+  .icone-envoie:hover {
+   background: #0054d6;
+  }
+}
 
   
 /* filtre */
@@ -128,6 +268,27 @@ nav ul li a:hover{
 .boutonsFiltres{
   display: flex;
 }
+
+@media screen and (max-width: 768px){
+  .filtres{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filtres h2{
+    font-size: 17px;
+    font-family: "Raleway","sans-serif";
+    padding: 10px 0px;
+  }
+  .boutonsfiltres{
+    margin: 30px 0px;
+    gap: 20px;
+  }
+  .bouton{
+    margin: 10px 0px;
+  }
+}
+
 
 .filtres h2{
   font-size: 17px;
@@ -219,7 +380,6 @@ nav ul li a:hover{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: white;
   padding: 4px;
   border-radius: 30px;
   box-shadow: 1px 1px 5px #888888;
@@ -235,7 +395,6 @@ nav ul li a:hover{
 .image-hergement img{
   width: 290px;
   height: 140px;
-  object-fit: cover;
   border-radius: 30px 30px 0px 0px;
 }
 
@@ -334,12 +493,19 @@ nav ul li a:hover{
   font-weight: 600;
 }
 
+.descriptionpopulaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 8px 10px;
+}
+
 .descriptionpopulaire h3{
   font-family: "Raleway","sans-serif";
   font-size: 16px;
   font-weight: 800;
   font-style: normal;
-  padding-bottom: 10px;
 }
 
 .descriptionpopulaire p{
@@ -347,36 +513,23 @@ nav ul li a:hover{
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
-  padding-bottom: 10px;
-}
-.notationpopulaire{
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-.notationpopulaire .etoilebleu{
-  color: #0065FC;
-  padding-top: 73px;
 }
 
-.notationpopulaire .etoilegris{
-  color: #CFCFCF;
-  padding-top: 73px;
-}
-
+.notationpopulaire,
 .notationpopulaire2{
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
+
+.notationpopulaire .etoilebleu,
 .notationpopulaire2 .etoilebleu{
   color: #0065FC;
-  padding-top: 53px;
 }
 
+.notationpopulaire .etoilegris,
 .notationpopulaire2 .etoilegris{
   color: #CFCFCF;
-  padding-top: 53px;
 }
 
 /* section activités */
@@ -397,7 +550,7 @@ nav ul li a:hover{
 .conteneuractivités{
   display: flex;
   flex-direction: row;
-  height: 463px;
+  height: 480px;
   gap: 40px;
 }
 
@@ -405,17 +558,20 @@ nav ul li a:hover{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: white;
   padding: 4px;
   border-radius: 30px;
-  box-shadow: 1px 1px 5px #888888;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
 }
 
 .cartesactivités .imagesactivités img{
   width: 350px;
-  height: 418px;
+  height: 405px;
   object-fit: cover;
   border-radius: 30px 30px 0px 0px;
+  
 }
 
 .cartesactivités h3{
@@ -423,14 +579,12 @@ nav ul li a:hover{
   font-size: 16px;
   font-weight: 800;
   font-style: normal;
-  padding-bottom: 0px;
-  padding-left: 10px;
+  padding: 5px 10px;
 }
 
 
-
 .cartescolonne1{
- gap: 30px;
+ gap: 20px;
  display: flex;
  flex-direction: column;
 }
@@ -442,7 +596,10 @@ nav ul li a:hover{
   background-color: white;
   padding: 4px;
   border-radius: 30px;
-  box-shadow: 1px 1px 5px #888888;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
 }
 
 .fortpomegues img{
@@ -458,20 +615,19 @@ nav ul li a:hover{
   font-size: 16px;
   font-weight: 800;
   font-style: normal;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 
 .cartescolonne1 .ilesfrioul{
-  display: flex;
+ display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: white;
   padding: 4px;
   border-radius: 30px;
-  margin-bottom: 50px;
-  box-shadow: 1px 1px 5px #888888;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
 }
 
 .ilesfrioul img{
@@ -487,7 +643,7 @@ nav ul li a:hover{
   font-weight: 800;
   font-style: normal;
   padding-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 
@@ -503,7 +659,10 @@ nav ul li a:hover{
   background-color: white;
   padding: 4px;
   border-radius: 30px;
-  box-shadow: 1px 1px 5px #888888;
+  background: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
 }
 
 .notredame img{
@@ -518,8 +677,7 @@ nav ul li a:hover{
   font-size: 16px;
   font-weight: 800;
   font-style: normal;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 
@@ -530,8 +688,9 @@ nav ul li a:hover{
   background-color: white;
   padding: 4px;
   border-radius: 30px;
-  margin-bottom: 50px;
-  box-shadow: 1px 1px 5px #888888;
+  overflow: hidden;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
+  
 }
 
 .parclongchamp img{
@@ -564,7 +723,7 @@ footer div h2{
   font-size: 19px;
   font-weight: 600;
   font-style: normal;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 footer div ul li{
@@ -573,4 +732,115 @@ footer div ul li{
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
+  
+}
+
+footer div ul li {
+  padding: 10px 0px;
+}
+
+/* RESPONSIVITÉ TÉLÉPHONE  */
+@media screen and (max-width: 767px) {
+
+  /* filtres : éviter le débordement des boutons sur petit écran */
+  .filtres{
+    margin: 20px 15px 0px 15px;
+  }
+
+  .boutonsfiltres{
+    flex-wrap: wrap;
+    gap: 15px 0px;
+  }
+
+  .bouton{
+    margin-left: 15px;
+  }
+
+  /* info */
+  .info{
+    margin: 20px 15px 10px 15px;
+  }
+
+  .infoicone{
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+
+  /* hébergements : cartes empilées, pleine largeur */
+  .hebergements{
+    flex-direction: column;
+  }
+
+  .conteneur-hebergements{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 15px;
+    border-radius: 0;
+  }
+
+  .conteneur-card{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carte-hebergement{
+    width: 100%;
+  }
+
+  .image-hergement img{
+    width: 100%;
+    height: 200px;
+  }
+
+  /* les plus populaires : passe sous les hébergements, pleine largeur */
+  .conteneur-populaire{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+  }
+
+  .carte-populaire img{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+  }
+
+  /* activités : une seule colonne, images pleine largeur */
+  .activités{
+    margin: 30px 15px 40px 15px;
+  }
+
+  .conteneuractivités{
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .cartescolonne1,
+  .cartescolonne2{
+    gap: 20px;
+  }
+
+  .cartesactivités .imagesactivités img,
+  .fortpomegues img,
+  .ilesfrioul img,
+  .notredame img,
+  .parclongchamp img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .cartescolonne1 .ilesfrioul,
+  .cartescolonne2 .parclongchamp{
+    margin-bottom: 0;
+  }
+
+  /* footer : colonnes empilées, gap réduit */
+  footer{
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px 40px 20px;
+  }
 }
