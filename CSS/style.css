@@ -227,7 +227,7 @@ nav ul li a:hover{
   transition: background 0.2s;
 }
 .icone-envoie{
-  display: non;
+  display: none;
 }
 .bouton-de-recherche:hover {
   background: #0054d6;
@@ -238,6 +238,7 @@ nav ul li a:hover{
     display: none;
   }
   .icone-envoie{
+    display: block;
     background: #0065FC;
     color: #ffffff;
     border: none;
