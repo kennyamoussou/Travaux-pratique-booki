@@ -31,18 +31,8 @@ nav ul,a{
   border-top: 3px solid transparent;
   padding-top: 10px;
 }
-nav ul li a:hover{
-  color: #0065FC;
-}
-
 
 @media screen and (max-width: 768px){ 
-  body{
-    width: auto;
-  }
-  main{
-    margin: 0;
-  }
   header{
     display: flex;
     flex-direction: column;
@@ -69,7 +59,7 @@ nav ul li a:hover{
    
   }
   nav ul li:hover{
-    border-bottom: 2px solid #0065FC ;
+    border-bottom: 2px solid #0065FC;
   }
   nav ul li a:hover{
   color: #0065FC;
@@ -77,7 +67,6 @@ nav ul li a:hover{
 }
 
 /* main */
-
 /* section hero */
 .hero h1{
   font-family: "Raleway", sans-serif;
@@ -246,10 +235,6 @@ nav ul li a:hover{
   margin-left: 50px;
   font-size: 16px;
   font-weight: 600;
-}
-
-.boutonsFiltres{
-  /* display: flex; */
 }
 
 @media screen and (max-width: 768px){
@@ -551,7 +536,6 @@ nav ul li a:hover{
   padding: 15px;
 }
 
-
 .cartescolonne1{
  gap: 20px;
  display: flex;
@@ -585,7 +569,6 @@ nav ul li a:hover{
   padding: 15px;
 }
 
-
 .cartescolonne1 .ilesfrioul{
  display: flex;
   flex-direction: column;
@@ -613,7 +596,6 @@ nav ul li a:hover{
   padding-bottom: 5px;
   padding: 15px;
 }
-
 
 .cartescolonne2{
  gap: 30px;
@@ -647,7 +629,6 @@ nav ul li a:hover{
   padding: 15px;
 }
 
-
 .cartescolonne2 .parclongchamp{
   display: flex;
   flex-direction: column;
@@ -658,7 +639,6 @@ nav ul li a:hover{
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 10px 18px rgba(0, 0, 0, .07);
-  
 }
 
 .parclongchamp img{
@@ -773,9 +753,7 @@ nav ul li a:hover{
   .cartescolonne2 .parclongchamp{
     margin-bottom: 0;
   }
-
 }
-
 
 /* footer */
 footer{
@@ -800,7 +778,6 @@ footer div ul li{
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  
 }
 
 footer div ul li {
